@@ -3,358 +3,163 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <div class="container">
-      <header class="header">
-        <div class="profile-section">
-          <img src="assets/Evans_Mwaura_Image.jpg" alt="Evans Mwaura" class="profile-pic" onerror="this.src='assets/placeholder-profile.jpg'">
-          <h1 class="name">Evans Mwaura</h1>
-          <h2 class="title">Web Developer | Computer Science Student</h2>
-          <a href="assets/Evans_Mwaura_Mburu_resume.pdf" target="_blank" class="resume-btn" download="Evans_Mwaura_Resume.pdf">
-            <span class="icon"></span>
-            Download Resume
-          </a>
-        </div>
-      </header>
+  <div class="container">
+    <header class="header">
+      <img src="assets/Evans_Mwaura_Image.jpg" alt="Evans Mwaura" class="profile-img" />
+      <h1>Evans Mwaura Mburu</h1>
+      <p class="tagline">Software Developer • Backend & Full‑Stack • Final Year CS Student</p>
+      <div class="contact">
+        <p>Nairobi, Kenya</p>
+        <p>Email: mwauraevans2003@gmail.com</p>
+        <p>Phone: +254 715 431 785</p>
+        <p>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+          <a href="https://github.com" target="_blank">GitHub</a> |
+          <a href="https://your-portfolio-link.com" target="_blank">Portfolio</a>
+        </p>
+      </div>
+    </header>
 
-      <section class="quote-section">
-        <blockquote class="quote">
-          "Code is like humor. When you have to explain it, it's bad."
-        </blockquote>
-      </section>
+    <section class="section">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Multi‑Chama Management System (Final Stages)</h3>
+        <ul>
+          <li>Handles multiple chamas (groups) with contributions tracking.</li>
+          <li>Includes a full loan management module.</li>
+          <li>Integrated email notifications for updates and approvals.</li>
+          <li>Working on M‑Pesa API integration for automated payments.</li>
+        </ul>
 
-      <section class="about-section">
-        <h2 class="section-title">About Me</h2>
-        <div class="content">
-          <p>
-            Hi, I'm Evans! I'm passionate about building clean, modern, and user-friendly web applications.
-            Currently pursuing my Bachelor's in Computer Science, I'm always learning and experimenting with new technologies.
-            I'm also passionate about Cyber Security, Docker, and Kubernetes.
-          </p>
-        </div>
-      </section>
+        <h3>Employee Management System (Under Development)</h3>
+        <ul>
+          <li>Managing employees, roles, and access levels.</li>
+          <li>Focus on backend workflows & secure data operations.</li>
+        </ul>
+      </div>
+    </section>
 
-      <section class="projects-section">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-icon"></div>
-            <h3>Multi-Chama System</h3>
-            <p>A system for managing savings groups (chamas), contributions, and member tracking.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-icon"></div>
-            <h3>Employee Management System</h3>
-            <p>A platform for managing employees, attendance, and payroll.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-icon"></div>
-            <h3>Portfolio Website</h3>
-            <p>This Angular-based portfolio website showcasing my skills and projects.</p>
-          </div>
-        </div>
-      </section>
+    <section class="section">
+      <h2>Technical Skills</h2>
+      <div class="card skills">
+        <ul>
+          <li><strong>Languages:</strong> Java, C, JavaScript, HTML, CSS, SCSS, TypeScript</li>
+          <li><strong>Frameworks:</strong> Angular, Spring Boot, Node.js (beginner)</li>
+          <li><strong>Tools:</strong> Git/GitHub, MySQL, PostgreSQL (beginner)</li>
+          <li><strong>Networking:</strong> Troubleshooting, LAN/WAN, Basic Cybersecurity</li>
+          <li><strong>Other:</strong> API Integration, SDLC, Team Collaboration</li>
+        </ul>
+      </div>
+    </section>
 
-      <section class="contact-section">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-info">
-          <div class="contact-item">
-  <span class="contact-icon"></span>
-  <a href="mailto:mwauraevans2003@gmail.com">mwauraevans2003@gmail.com</a>
-</div>
-          <div class="social-links">
-            <a href="https://github.com/Evans-dev-code" target="_blank" class="social-link github">
-              <span class="social-icon"></span>
-              GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/evans-mburu-8224b7341/" target="_blank" class="social-link linkedin">
-              <span class="social-icon"></span>
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </section>
+    <section class="section">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Kenya Power – IT Department (Nyeri) | Attachment</h3>
+        <p>Jan – Apr 2024</p>
+        <ul>
+          <li>Troubleshooted and resolved IT issues for 50+ staff users.</li>
+          <li>Hands‑on networking and cybersecurity exposure.</li>
+        </ul>
 
-      <footer class="footer">
-        <p>&copy; 2025 Evans Mwaura. Built with Angular.</p>
-      </footer>
-    </div>
+        <h3>EM Tech Hub – Remote Internship</h3>
+        <p>Feb – Apr 2024</p>
+        <ul>
+          <li>Built Angular + Spring Boot + MySQL applications.</li>
+          <li>Worked on e‑commerce prototype and API integrations.</li>
+        </ul>
+
+        <h3>University Internal Attachment Project</h3>
+        <p>Jan – May 2023</p>
+        <ul>
+          <li>Led Online Shopping System development.</li>
+          <li>Implemented user management, product listing & order tracking.</li>
+        </ul>
+      </div>
+    </section>
+
+  
+  </div>
   `,
   styles: [`
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      min-height: 100vh;
+    :host {
+      display: block;
+      background: #0a0f1a;
+      color: #e0e7ff;
+      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
     }
 
     .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: auto;
     }
 
     .header {
       text-align: center;
-      padding: 40px 0;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      margin: -20px -20px 40px -20px;
-      border-radius: 20px 20px 0 0;
-      color: white;
+      margin-bottom: 40px;
     }
 
-    .profile-section {
-      position: relative;
-    }
-
-    .profile-pic {
-      width: 180px;
-      height: 180px;
+    .profile-img {
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
+      border: 3px solid #00eaff;
+      box-shadow: 0 0 15px #00eaff;
       object-fit: cover;
-      margin-bottom: 20px;
-      border: 5px solid rgba(255, 255, 255, 0.3);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
     }
 
-    .profile-pic:hover {
-      transform: scale(1.05);
+    h1 {
+      margin-top: 15px;
+      font-size: 32px;
+      color: #00eaff;
+      text-shadow: 0 0 10px #00eaff;
     }
 
-    .name {
-      font-size: 3rem;
-      font-weight: 700;
+    .tagline {
+      color: #9bb8ff;
       margin-bottom: 10px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
-    .title {
-      font-size: 1.4rem;
-      font-weight: 300;
-      margin-bottom: 30px;
-      opacity: 0.9;
-    }
-
-    .resume-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 30px;
-      background: rgba(255, 255, 255, 0.2);
-      color: white;
+    .contact a {
+      color: #00eaff;
       text-decoration: none;
-      border-radius: 50px;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      backdrop-filter: blur(10px);
-      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+    .contact a:hover {
+      text-shadow: 0 0 10px #00eaff;
     }
 
-    .resume-btn:hover {
-      background: rgba(255, 255, 255, 0.3);
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    .section {
+      margin-top: 40px;
     }
 
-    .quote-section {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    .quote {
-      font-size: 1.5rem;
-      font-style: italic;
-      color: #666;
-      background: #f8f9fa;
-      padding: 30px;
-      border-radius: 15px;
-      border-left: 5px solid #667eea;
-      position: relative;
-    }
-
-    .quote::before {
-      content: '"';
-      font-size: 4rem;
-      color: #667eea;
-      position: absolute;
-      top: -10px;
-      left: 20px;
-      opacity: 0.3;
-    }
-
-    .section-title {
-      font-size: 2.2rem;
-      margin-bottom: 25px;
-      color: #333;
-      position: relative;
-      padding-bottom: 10px;
-    }
-
-    .section-title::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 60px;
-      height: 3px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      border-radius: 2px;
-    }
-
-    .about-section {
-      margin-bottom: 50px;
-    }
-
-    .content p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #555;
-      background: #f8f9fa;
-      padding: 25px;
-      border-radius: 15px;
-    }
-
-    .projects-section {
-      margin-bottom: 50px;
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-    }
-
-    .project-card {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-      transition: all 0.3s ease;
-      border: 1px solid #eee;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-    }
-
-    .project-icon {
-      font-size: 2.5rem;
+    h2 {
+      color: #00eaff;
+      border-left: 5px solid #00eaff;
+      padding-left: 10px;
       margin-bottom: 15px;
+      text-shadow: 0 0 10px #00eaff;
     }
 
-    .project-card h3 {
-      font-size: 1.3rem;
-      margin-bottom: 15px;
-      color: #333;
+    .card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 238, 255, 0.1);
     }
 
-    .project-card p {
-      color: #666;
-      line-height: 1.6;
+    ul {
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
     }
 
-    .contact-section {
-      margin-bottom: 30px;
-    }
-
-    .contact-info {
-      background: #f8f9fa;
-      padding: 30px;
-      border-radius: 15px;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-    }
-
-    .contact-icon {
-      font-size: 1.5rem;
-    }
-
-    .social-links {
-      display: flex;
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .social-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 20px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: 500;
-      transition: all 0.3s ease;
-    }
-
-    .social-link:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-    }
-
-    .social-icon {
-      font-size: 1.2rem;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 20px 0;
-      color: #666;
-      border-top: 1px solid #eee;
-      margin-top: 30px;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        margin: 10px;
-        padding: 15px;
-      }
-
-      .name {
-        font-size: 2.5rem;
-      }
-
-      .title {
-        font-size: 1.2rem;
-      }
-
-      .projects-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .social-links {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .quote {
-        font-size: 1.2rem;
-        padding: 20px;
-      }
+    @media (max-width: 600px) {
+      h1 { font-size: 26px; }
+      .card { padding: 15px; }
     }
   `]
 })
-export class AppComponent {
-  title = 'evans-mwaura-portfolio';
-}
+export class AppComponent {}
