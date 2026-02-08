@@ -62,7 +62,7 @@ import { Component } from '@angular/core';
           <li>Multi-group (chama) support with role-based access</li>
           <li>Contributions and loan tracking modules</li>
           <li>Email notifications for approvals and updates</li>
-          <li>Planned M-Pesa API integration for automated payments</li>
+          <li>M-Pesa API integration for automated payments</li>
         </ul>
         <p class="links">
           <a href="https://chama-hub-frontend-1e8s.vercel.app/" target="_blank">Live Demo</a>
@@ -78,6 +78,7 @@ import { Component } from '@angular/core';
           <li>Property and tenant records management</li>
           <li>Secure backend workflows</li>
           <li>Modern Angular UI focused on usability</li>
+          <li>Secure house booking and payments via Mpesa</li>
         </ul>
         <p class="links">
           <a href="https://makao-safe-frontend.vercel.app/" target="_blank">Live Demo</a>
