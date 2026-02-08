@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   template: `
   <div class="container">
 
-    <!-- HEADER -->
     <header class="header">
       <img src="assets/Evans_Mwaura_Image.jpg" alt="Evans Mwaura" class="profile-img" />
       <h1>Evans Mwaura Mburu</h1>
@@ -25,7 +24,12 @@ import { Component } from '@angular/core';
         <p>
           <a href="https://www.linkedin.com/in/evans-mburu-8224b7341/" target="_blank">LinkedIn</a> |
           <a href="https://github.com/Evans-dev-code" target="_blank">GitHub</a> |
-          <a href="https://portfolio-five-ruddy-29.vercel.app/" target="_blank">Portfolio</a>
+          <a 
+             href="assets/Evans_Mwaura_Mburu_resume.pdf"
+             download="Evans_Mwaura_Mburu_resume.pdf"
+            >
+             Download CV
+          </a>
         </p>
       </div>
     </header>
