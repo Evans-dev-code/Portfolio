@@ -192,11 +192,47 @@ import { Component } from '@angular/core';
       color: #c7d2fe;
     }
 
-    .contact a {
-      color: #38bdf8;
-      text-decoration: none;
-      margin: 0 5px;
-    }
+    .contact {
+  margin-top: 15px;
+}
+
+.contact p {
+  margin: 6px 0;
+}
+
+.contact a {
+  display: inline-block;
+  margin: 6px 6px;
+  padding: 8px 14px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #38bdf8;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  background: transparent;
+}
+
+/* Hover effect */
+.contact a:hover {
+  background: #38bdf8;
+  color: #020617;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Make Download CV stand out slightly more */
+.contact a:last-child {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  border: none;
+  font-weight: 600;
+}
+
+.contact a:last-child:hover {
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.9);
+}
+
 
     .section {
       margin-top: 45px;
