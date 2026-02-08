@@ -4,161 +4,252 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
   <div class="container">
+
+    <!-- HEADER -->
     <header class="header">
       <img src="assets/Evans_Mwaura_Image.jpg" alt="Evans Mwaura" class="profile-img" />
       <h1>Evans Mwaura Mburu</h1>
-      <p class="tagline">Software Developer • Backend & Full‑Stack • Final Year CS Student</p>
+      <p class="tagline">
+        Backend & Full-Stack Software Developer • Computer Science Finalist
+      </p>
+
+      <p class="aspiration">
+        I build scalable backend systems and clean, user-focused web applications.
+        Passionate about turning real-world problems into reliable digital solutions.
+      </p>
+
       <div class="contact">
-        <p>Nairobi, Kenya</p>
-        <p>Email: mwauraevans2003@gmail.com</p>
-        <p>Phone: +254 715 431 785</p>
+        <p>📍 Nairobi, Kenya</p>
+        <p>📧 mwauraevans2003@gmail.com</p>
+        <p>📞 +254 715 431 785</p>
         <p>
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
-          <a href="https://github.com" target="_blank">GitHub</a> |
-          <a href="https://your-portfolio-link.com" target="_blank">Portfolio</a>
+          <a href="https://www.linkedin.com/in/evans-mburu-8224b7341/" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/Evans-dev-code" target="_blank">GitHub</a> |
+          <a href="https://portfolio-five-ruddy-29.vercel.app/" target="_blank">Portfolio</a>
         </p>
       </div>
     </header>
 
+    <!-- ABOUT -->
     <section class="section">
-      <h2>Projects</h2>
+      <h2>About Me</h2>
       <div class="card">
-        <h3>Multi‑Chama Management System (Final Stages)</h3>
-        <ul>
-          <li>Handles multiple chamas (groups) with contributions tracking.</li>
-          <li>Includes a full loan management module.</li>
-          <li>Integrated email notifications for updates and approvals.</li>
-          <li>Working on M‑Pesa API integration for automated payments.</li>
-        </ul>
+        <p>
+          I am a final-year Computer Science student at Dedan Kimathi University of Technology
+          with hands-on experience in backend and full-stack development.
+          I enjoy working with Java (Spring Boot) and TypeScript (Angular) to build
+          secure, maintainable, and scalable systems.
+        </p>
+        <p>
+          My interests include backend architecture, API development, fintech systems,
+          and AI-assisted software solutions. I thrive in collaborative environments
+          and enjoy continuously learning new technologies.
+        </p>
+      </div>
+    </section>
 
-        <h3>Employee Management System (Under Development)</h3>
+    <!-- PROJECTS -->
+    <section class="section">
+      <h2>Featured Projects</h2>
+
+      <div class="card project">
+        <h3>ChamaHub – Digital Chama Management Platform</h3>
+        <p class="project-desc">
+          A multi-chama management system designed to digitize group savings,
+          contributions, and loan management.
+        </p>
         <ul>
-          <li>Managing employees, roles, and access levels.</li>
-          <li>Focus on backend workflows & secure data operations.</li>
+          <li>Multi-group (chama) support with role-based access</li>
+          <li>Contributions and loan tracking modules</li>
+          <li>Email notifications for approvals and updates</li>
+          <li>Planned M-Pesa API integration for automated payments</li>
+        </ul>
+        <p class="links">
+          <a href="https://chama-hub-frontend-1e8s.vercel.app/" target="_blank">Live Demo</a>
+        </p>
+      </div>
+
+      <div class="card project">
+        <h3>MakaoSafe – Property & Housing Management System</h3>
+        <p class="project-desc">
+          A web platform aimed at simplifying property management and tenant interactions.
+        </p>
+        <ul>
+          <li>Property and tenant records management</li>
+          <li>Secure backend workflows</li>
+          <li>Modern Angular UI focused on usability</li>
+        </ul>
+        <p class="links">
+          <a href="https://makao-safe-frontend.vercel.app/" target="_blank">Live Demo</a>
+        </p>
+      </div>
+
+      <div class="card project">
+        <h3>Online Shopping System (Team Project)</h3>
+        <ul>
+          <li>Built core e-commerce features in a 3-member team</li>
+          <li>Implemented CRUD backend logic for multiple entities</li>
+          <li>Designed and styled 8+ responsive UI pages</li>
         </ul>
       </div>
     </section>
 
+    <!-- SKILLS -->
     <section class="section">
       <h2>Technical Skills</h2>
       <div class="card skills">
         <ul>
-          <li><strong>Languages:</strong> Java, C, JavaScript, HTML, CSS, SCSS, TypeScript</li>
-          <li><strong>Frameworks:</strong> Angular, Spring Boot, Node.js (beginner)</li>
-          <li><strong>Tools:</strong> Git/GitHub, MySQL, PostgreSQL (beginner)</li>
-          <li><strong>Networking:</strong> Troubleshooting, LAN/WAN, Basic Cybersecurity</li>
-          <li><strong>Other:</strong> API Integration, SDLC, Team Collaboration</li>
+          <li><strong>Backend:</strong> Java, Spring Boot, REST APIs, MySQL</li>
+          <li><strong>Frontend:</strong> Angular, TypeScript, HTML, CSS, SCSS</li>
+          <li><strong>Databases:</strong> MySQL, PostgreSQL (Beginner)</li>
+          <li><strong>Tools:</strong> Git, GitHub, Linux Basics</li>
+          <li><strong>Networking:</strong> LAN/WAN troubleshooting, basic cybersecurity</li>
+          <li><strong>Other:</strong> Agile teamwork, SDLC, API integration</li>
         </ul>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section class="section">
       <h2>Experience</h2>
+
       <div class="card">
-        <h3>Kenya Power – IT Department (Nyeri) | Attachment</h3>
-        <p>Jan – Apr 2024</p>
+        <h3>Kenya Power – IT Department (Attachment)</h3>
+        <p class="time">Jan – Apr 2024 | Nyeri</p>
         <ul>
-          <li>Troubleshooted and resolved IT issues for 50+ staff users.</li>
-          <li>Hands‑on networking and cybersecurity exposure.</li>
+          <li>Provided IT support and troubleshooting for 50+ staff users</li>
+          <li>Worked with networking infrastructure and basic cybersecurity practices</li>
+          <li>Gained experience working in a large enterprise IT environment</li>
         </ul>
+      </div>
 
-        <h3>EM Tech Hub – Remote Internship</h3>
-        <p>Feb – Apr 2024</p>
+      <div class="card">
+        <h3>EM Tech Hub – Software Development Intern</h3>
+        <p class="time">Feb – Apr 2024 | Remote (Tatu City)</p>
         <ul>
-          <li>Built Angular + Spring Boot + MySQL applications.</li>
-          <li>Worked on e‑commerce prototype and API integrations.</li>
-        </ul>
-
-        <h3>University Internal Attachment Project</h3>
-        <p>Jan – May 2023</p>
-        <ul>
-          <li>Led Online Shopping System development.</li>
-          <li>Implemented user management, product listing & order tracking.</li>
+          <li>Developed web applications using Angular, Spring Boot, and MySQL</li>
+          <li>Integrated APIs into a prototype e-commerce system</li>
+          <li>Worked in an agile, collaborative development environment</li>
         </ul>
       </div>
     </section>
 
-  
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2026 Evans Mwaura Mburu • Built with Angular</p>
+    </footer>
+
   </div>
   `,
   styles: [`
     :host {
       display: block;
-      background: #0a0f1a;
-      color: #e0e7ff;
+      background: linear-gradient(135deg, #020617, #0a0f1a);
+      color: #e5e7eb;
       padding: 20px;
       font-family: 'Segoe UI', sans-serif;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 950px;
       margin: auto;
     }
 
     .header {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     .profile-img {
-      width: 130px;
-      height: 130px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      border: 3px solid #00eaff;
-      box-shadow: 0 0 15px #00eaff;
+      border: 3px solid #38bdf8;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.7);
       object-fit: cover;
     }
 
     h1 {
       margin-top: 15px;
-      font-size: 32px;
-      color: #00eaff;
-      text-shadow: 0 0 10px #00eaff;
+      font-size: 34px;
+      color: #38bdf8;
     }
 
     .tagline {
-      color: #9bb8ff;
+      color: #93c5fd;
       margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .aspiration {
+      max-width: 700px;
+      margin: 10px auto 20px;
+      color: #c7d2fe;
     }
 
     .contact a {
-      color: #00eaff;
+      color: #38bdf8;
       text-decoration: none;
-    }
-    .contact a:hover {
-      text-shadow: 0 0 10px #00eaff;
+      margin: 0 5px;
     }
 
     .section {
-      margin-top: 40px;
+      margin-top: 45px;
     }
 
     h2 {
-      color: #00eaff;
-      border-left: 5px solid #00eaff;
-      padding-left: 10px;
-      margin-bottom: 15px;
-      text-shadow: 0 0 10px #00eaff;
+      color: #38bdf8;
+      border-left: 5px solid #38bdf8;
+      padding-left: 12px;
+      margin-bottom: 20px;
     }
 
     .card {
-      background: #111827;
-      border: 1px solid #1f2937;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 238, 255, 0.1);
+      background: #020617;
+      border: 1px solid #1e293b;
+      padding: 22px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.08);
+    }
+
+    .project h3 {
+      color: #7dd3fc;
+    }
+
+    .project-desc {
+      color: #cbd5f5;
+      margin-bottom: 10px;
+    }
+
+    .links a {
+      color: #38bdf8;
+      font-weight: 500;
     }
 
     ul {
       margin-left: 20px;
     }
+
     li {
       margin-bottom: 8px;
     }
 
+    .time {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #64748b;
+      font-size: 14px;
+    }
+
     @media (max-width: 600px) {
       h1 { font-size: 26px; }
-      .card { padding: 15px; }
+      .card { padding: 16px; }
     }
   `]
 })
