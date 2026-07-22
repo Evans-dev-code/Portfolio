@@ -5,22 +5,20 @@ import { Component } from '@angular/core';
   template: `
   <div class="container">
 
-    <!-- HEADER -->
     <header class="header">
       <img src="assets/Evans_Mwaura_Image.jpg" alt="Evans Mwaura" class="profile-img" />
       <h1>Evans Mwaura Mburu</h1>
-      <p class="tagline">Software Developer &amp; Cybersecurity Enthusiast</p>
+      <p class="tagline">Backend &amp; Full-Stack Software Developer</p>
 
       <div class="badges">
-        <span class="badge badge-ok">B.Sc. Computer Science — DeKUT, 2026</span>
-        <span class="badge badge-warn">Cyber Security Certificate (IPSE) — In Progress</span>
+        <span class="badge badge-ok">B.Sc. Computer Science — DeKUT, June 2026</span>
+        <span class="badge badge-warn">Studying Cyber Security @ IPSE</span>
         <span class="badge badge-live">Open to Opportunities</span>
       </div>
 
-      <p class="summary">
-        I design and build reliable software systems, and I'm growing a parallel foundation
-        in cybersecurity — from understanding how systems are attacked to how they're defended
-        and how findings are communicated clearly to the people who need to act on them.
+      <p class="aspiration">
+        I build scalable backend systems and clean, user-focused web applications —
+        turning real-world problems into reliable, production-ready software.
       </p>
 
       <div class="contact">
@@ -39,93 +37,17 @@ import { Component } from '@angular/core';
       <h2>About Me</h2>
       <div class="card">
         <p>
-          I'm a Computer Science graduate of Dedan Kimathi University of Technology, with
-          practical experience building complete software products — from backend systems and
-          APIs to the interfaces people actually use. My work spans fintech-style payment
-          integrations, multi-tenant business platforms, and collaborative team projects.
+          I'm a Computer Science graduate of Dedan Kimathi University of Technology (June 2026),
+          with hands-on experience across backend and full-stack development. I enjoy working with
+          Java (Spring Boot), PHP, and TypeScript (Angular) to build secure, maintainable, and
+          scalable systems — from fintech integrations to multi-tenant SaaS platforms.
         </p>
         <p>
-          I'm currently expanding into cybersecurity through a Cyber Security Certificate at
-          IPSE, focused on how systems are assessed for weaknesses and how those findings are
-          reported in a way that's genuinely useful to decision-makers — not just technical
-          detail for its own sake. I enjoy roles where clear thinking, structured problem-solving,
-          and continuous learning matter more than any single tool.
+          My interests include backend architecture, API design, fintech systems, and
+          AI-assisted software solutions. I'm currently deepening my security fundamentals through
+          a Cyber Security Certificate at IPSE, and I thrive in collaborative, agile environments
+          where I can keep learning.
         </p>
-      </div>
-    </section>
-
-    <!-- AREAS OF EXPERTISE -->
-    <section class="section">
-      <span class="eyebrow">Capabilities</span>
-      <h2>Areas of Expertise</h2>
-
-      <div class="tabs">
-        <button class="tab" [class.active]="activeTab === 'dev'" (click)="setTab('dev')">
-          Software Development
-        </button>
-        <button class="tab" [class.active]="activeTab === 'security'" (click)="setTab('security')">
-          Cybersecurity
-        </button>
-      </div>
-
-      <div class="card skills-grid" *ngIf="activeTab === 'dev'">
-        <div class="skill-group">
-          <h4>Backend Development</h4>
-          <p class="skill-note">Building the logic and data layer that applications run on.</p>
-          <div class="tech-row">
-            <span class="tech">Java</span><span class="tech">Spring Boot</span><span class="tech">PHP</span>
-            <span class="tech">REST APIs</span><span class="tech">Authentication &amp; Authorization</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Frontend Development</h4>
-          <p class="skill-note">Turning designs and requirements into usable interfaces.</p>
-          <div class="tech-row">
-            <span class="tech">Angular</span><span class="tech">TypeScript</span><span class="tech">Responsive UI/UX</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Data &amp; Integrations</h4>
-          <p class="skill-note">Storing data reliably and connecting systems that need to talk to each other.</p>
-          <div class="tech-row">
-            <span class="tech">MySQL</span><span class="tech">PostgreSQL</span><span class="tech">Payment API Integration</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Ways of Working</h4>
-          <p class="skill-note">How I approach delivering software as part of a team.</p>
-          <div class="tech-row">
-            <span class="tech">Agile Collaboration</span><span class="tech">Git Version Control</span><span class="tech">Software Development Lifecycle</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card skills-grid" *ngIf="activeTab === 'security'">
-        <p class="security-note">
-          Developed through structured coursework at IPSE and self-directed practice in
-          controlled, ethical environments. Presented here at the level of what I understand
-          and can apply — not as a claim of professional certification.
-        </p>
-        <div class="skill-group">
-          <h4>Reconnaissance &amp; OSINT</h4>
-          <p class="skill-note">Gathering and organizing publicly available information to understand an organization's exposure.</p>
-        </div>
-        <div class="skill-group">
-          <h4>Vulnerability Assessment</h4>
-          <p class="skill-note">Identifying, categorizing, and prioritizing weaknesses in systems and applications.</p>
-        </div>
-        <div class="skill-group">
-          <h4>Penetration Testing Fundamentals</h4>
-          <p class="skill-note">Understanding how authorized, ethical testing is planned and scoped to evaluate real-world risk.</p>
-        </div>
-        <div class="skill-group">
-          <h4>Security Reporting &amp; Visualization</h4>
-          <p class="skill-note">Turning technical findings into clear reports and visual summaries for both technical and non-technical audiences.</p>
-        </div>
-        <div class="skill-group">
-          <h4>Network &amp; Systems Security</h4>
-          <p class="skill-note">Networking fundamentals, LAN/WAN troubleshooting, and foundational security best practices.</p>
-        </div>
       </div>
     </section>
 
@@ -134,104 +56,151 @@ import { Component } from '@angular/core';
       <span class="eyebrow">Work</span>
       <h2>Featured Projects</h2>
 
-      <div class="project-card featured">
-        <div class="project-top">
-          <span class="tag tag-featured">Featured · SaaS Platform</span>
-          <span class="status status-live">Live</span>
+      <div class="term-card featured">
+        <div class="term-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="term-path">~/projects/enterprise-pms</span>
+          <span class="status status-live">● LIVE</span>
         </div>
-        <h3>Enterprise Performance Management System</h3>
-        <p class="project-desc">
-          A multi-tenant, role-based platform that helps organizations track performance,
-          run continuous feedback, and keep individual goals aligned with company strategy.
-        </p>
-        <button class="details-btn" (click)="toggle('pms')">
-          {{ expanded['pms'] ? 'Hide details' : 'View details' }}
-        </button>
-        <div class="details" *ngIf="expanded['pms']">
+        <div class="term-body">
+          <div class="project-head">
+            <h3>Enterprise Performance Management System <span class="role">— SaaS, Full-Stack</span></h3>
+            <span class="pill pill-featured">Featured</span>
+          </div>
+          <p class="project-desc">
+            A multi-tenant, role-based SaaS platform for corporate performance tracking, continuous
+            feedback, and strategic goal alignment across organizations.
+          </p>
           <ul>
-            <li>Separate, secure dashboards for Super Admins, Organization Admins, Managers, and Employees</li>
-            <li>KPI and OKR tracking with visual progress indicators and real-time charts</li>
-            <li>360° performance reviews and structured manager–employee check-ins</li>
-            <li>Automated, secure subscription billing through the M-Pesa mobile payment network</li>
-            <li>Backend APIs built with authentication safeguards and activity logging for accountability</li>
+            <li>Role-based architecture with dedicated dashboards for Super Admins, Org Admins, Managers, and Employees</li>
+            <li>KPI &amp; OKR tracking with interactive progress sliders and real-time Chart.js visualizations</li>
+            <li>360° appraisals and weekly 1-on-1 workspaces for manager–employee communication</li>
+            <li>M-Pesa Daraja API (STK Push) integration for real-time, secure subscription billing</li>
+            <li>Custom PHP REST APIs with JWT authentication, PDO/MySQL, and automated audit logging</li>
           </ul>
           <div class="tech-row">
-            <span class="tech">PHP</span><span class="tech">MySQL</span><span class="tech">Secure Authentication</span>
-            <span class="tech">Bootstrap 5</span><span class="tech">Data Visualization</span><span class="tech">Mobile Payments</span>
+            <span class="tech">PHP</span><span class="tech">MySQL</span><span class="tech">JWT</span>
+            <span class="tech">Bootstrap 5</span><span class="tech">Chart.js</span><span class="tech">M-Pesa API</span>
           </div>
-          <p class="links"><a href="https://pms.cidarsec.co.ke" target="_blank">View Live Demo →</a></p>
+          <p class="links">
+            <a href="https://pms.cidarsec.co.ke" target="_blank">Live Demo →</a>
+          </p>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-top">
-          <span class="tag">Business Platform</span>
-          <span class="status status-live">Live</span>
+      <div class="term-card">
+        <div class="term-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="term-path">~/projects/chamahub</span>
+          <span class="status status-live">● LIVE</span>
         </div>
-        <h3>ChamaHub — Digital Group Savings Platform</h3>
-        <p class="project-desc">
-          A platform that digitizes how savings groups ("chamas") manage contributions, loans,
-          and approvals.
-        </p>
-        <button class="details-btn" (click)="toggle('chama')">
-          {{ expanded['chama'] ? 'Hide details' : 'View details' }}
-        </button>
-        <div class="details" *ngIf="expanded['chama']">
+        <div class="term-body">
+          <h3>ChamaHub <span class="role">— Digital Chama Management Platform</span></h3>
+          <p class="project-desc">
+            A multi-chama management system designed to digitize group savings, contributions, and
+            loan management.
+          </p>
           <ul>
-            <li>Support for multiple independent groups, each with their own access permissions</li>
-            <li>Contribution and loan tracking with automated email notifications</li>
-            <li>Mobile payment integration for automated, verifiable member payments</li>
+            <li>Multi-group (chama) support with role-based access</li>
+            <li>Contributions and loan tracking modules</li>
+            <li>Email notifications for approvals and updates</li>
+            <li>M-Pesa API integration for automated payments</li>
           </ul>
           <div class="tech-row">
-            <span class="tech">Angular</span><span class="tech">Spring Boot</span><span class="tech">MySQL</span><span class="tech">Mobile Payments</span>
+            <span class="tech">Angular</span><span class="tech">Spring Boot</span><span class="tech">MySQL</span><span class="tech">M-Pesa API</span>
           </div>
-          <p class="links"><a href="https://chama-hub-frontend-1e8s.vercel.app/" target="_blank">View Live Demo →</a></p>
+          <p class="links">
+            <a href="https://chama-hub-frontend-1e8s.vercel.app/" target="_blank">Live Demo →</a>
+          </p>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-top">
-          <span class="tag">Business Platform</span>
-          <span class="status status-live">Live</span>
+      <div class="term-card">
+        <div class="term-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="term-path">~/projects/makaosafe</span>
+          <span class="status status-live">● LIVE</span>
         </div>
-        <h3>MakaoSafe — Property &amp; Housing Management</h3>
-        <p class="project-desc">
-          A platform that simplifies property management and tenant interactions, including
-          secure bookings and payments.
-        </p>
-        <button class="details-btn" (click)="toggle('makao')">
-          {{ expanded['makao'] ? 'Hide details' : 'View details' }}
-        </button>
-        <div class="details" *ngIf="expanded['makao']">
+        <div class="term-body">
+          <h3>MakaoSafe <span class="role">— Property &amp; Housing Management System</span></h3>
+          <p class="project-desc">
+            A web platform aimed at simplifying property management and tenant interactions.
+          </p>
           <ul>
-            <li>Centralized property and tenant records</li>
-            <li>Secure booking workflow backed by reliable backend processes</li>
-            <li>Mobile payment integration for rent and booking payments</li>
+            <li>Property and tenant records management</li>
+            <li>Secure backend workflows</li>
+            <li>Modern Angular UI focused on usability</li>
+            <li>Secure house booking and payments via M-Pesa</li>
           </ul>
           <div class="tech-row">
-            <span class="tech">Angular</span><span class="tech">Spring Boot</span><span class="tech">Mobile Payments</span>
+            <span class="tech">Angular</span><span class="tech">Spring Boot</span><span class="tech">M-Pesa API</span>
           </div>
-          <p class="links"><a href="https://makao-safe-frontend.vercel.app/" target="_blank">View Live Demo →</a></p>
+          <p class="links">
+            <a href="https://makao-safe-frontend.vercel.app/" target="_blank">Live Demo →</a>
+          </p>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-top">
-          <span class="tag">Team Project</span>
+      <div class="term-card">
+        <div class="term-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="term-path">~/projects/online-shopping-system</span>
+          <span class="status status-team">TEAM</span>
         </div>
-        <h3>Online Shopping System</h3>
-        <p class="project-desc">
-          A collaborative e-commerce build completed with two other developers.
-        </p>
-        <button class="details-btn" (click)="toggle('shop')">
-          {{ expanded['shop'] ? 'Hide details' : 'View details' }}
-        </button>
-        <div class="details" *ngIf="expanded['shop']">
+        <div class="term-body">
+          <h3>Online Shopping System <span class="role">— Team Project (3 members)</span></h3>
           <ul>
-            <li>Contributed core e-commerce features as part of a 3-person team</li>
-            <li>Built backend logic for managing products, orders, and users</li>
-            <li>Designed and styled 8+ responsive interface pages</li>
+            <li>Built core e-commerce features in a 3-member team</li>
+            <li>Implemented CRUD backend logic for multiple entities</li>
+            <li>Designed and styled 8+ responsive UI pages</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section">
+      <span class="eyebrow">Stack</span>
+      <h2>Technical Skills</h2>
+      <div class="card skills-grid">
+        <div class="skill-group">
+          <h4>Backend</h4>
+          <div class="tech-row">
+            <span class="tech">Java</span><span class="tech">Spring Boot</span><span class="tech">PHP</span>
+            <span class="tech">REST APIs</span><span class="tech">JWT</span><span class="tech">PDO</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <div class="tech-row">
+            <span class="tech">Angular</span><span class="tech">TypeScript</span><span class="tech">HTML</span>
+            <span class="tech">CSS/SCSS</span><span class="tech">Bootstrap 5</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Databases</h4>
+          <div class="tech-row">
+            <span class="tech">MySQL</span><span class="tech">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Integrations &amp; Tools</h4>
+          <div class="tech-row">
+            <span class="tech">M-Pesa Daraja API</span><span class="tech">Chart.js</span>
+            <span class="tech">Git/GitHub</span><span class="tech">Linux</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Networking &amp; Security</h4>
+          <div class="tech-row">
+            <span class="tech">LAN/WAN Troubleshooting</span><span class="tech">Cybersecurity Fundamentals</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Practices</h4>
+          <div class="tech-row">
+            <span class="tech">Agile</span><span class="tech">SDLC</span><span class="tech">API Integration</span>
+          </div>
         </div>
       </div>
     </section>
@@ -244,51 +213,29 @@ import { Component } from '@angular/core';
       <div class="timeline">
         <div class="timeline-item">
           <h3>EM Tech Hub <span class="role">— Software Development Intern</span></h3>
-          <p class="time">Feb – Apr 2024 · Remote</p>
+          <p class="time">Feb – Apr 2024 · Remote (Tatu City)</p>
           <ul>
-            <li>Built web applications end-to-end using Angular, Spring Boot, and MySQL</li>
-            <li>Integrated third-party APIs into a prototype e-commerce system</li>
-            <li>Collaborated with a small team using agile working practices</li>
+            <li>Developed web applications using Angular, Spring Boot, and MySQL</li>
+            <li>Integrated APIs into a prototype e-commerce system</li>
+            <li>Worked in an agile, collaborative development environment</li>
           </ul>
         </div>
 
         <div class="timeline-item">
-          <h3>Kenya Power <span class="role">— IT Department, Industrial Attachment</span></h3>
+          <h3>Kenya Power <span class="role">— IT Department (Attachment)</span></h3>
           <p class="time">Jan – Apr 2024 · Nyeri</p>
           <ul>
-            <li>Provided IT support and troubleshooting for a staff base of 50+ users</li>
-            <li>Gained direct exposure to enterprise networking infrastructure</li>
-            <li>Built foundational awareness of workplace cybersecurity practices</li>
+            <li>Provided IT support and troubleshooting for 50+ staff users</li>
+            <li>Worked with networking infrastructure and basic cybersecurity practices</li>
+            <li>Gained experience working in a large enterprise IT environment</li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="section">
-      <span class="eyebrow">Foundation</span>
-      <h2>Education &amp; Certifications</h2>
-      <div class="card">
-        <div class="edu-row">
-          <div>
-            <h4>B.Sc. Computer Science</h4>
-            <p class="skill-note">Dedan Kimathi University of Technology</p>
-          </div>
-          <span class="time">Graduated 2026</span>
-        </div>
-        <div class="edu-row">
-          <div>
-            <h4>Cyber Security Certificate</h4>
-            <p class="skill-note">IPSE</p>
-          </div>
-          <span class="time">In Progress</span>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <p>© 2026 Evans Mwaura Mburu</p>
+      <p>© 2026 Evans Mwaura Mburu · Built with Angular</p>
     </footer>
 
   </div>
@@ -298,58 +245,82 @@ import { Component } from '@angular/core';
 
     :host {
       display: block;
-      background: linear-gradient(160deg, #0a0f1a, #0d1420 55%, #0a0f1a);
+      background: radial-gradient(ellipse 1200px 600px at 50% -10%, rgba(56,189,248,0.10), transparent),
+                  linear-gradient(160deg, #020617, #060b16 55%, #0a0f1a);
       color: #dbe3ee;
       padding: 28px 20px 60px;
       font-family: 'Inter', -apple-system, sans-serif;
       -webkit-font-smoothing: antialiased;
     }
 
-    .container { max-width: 840px; margin: auto; }
+    .container {
+      max-width: 880px;
+      margin: auto;
+    }
 
-    /* HEADER */
-    .header { text-align: center; margin-bottom: 52px; }
+    /* ---------- HEADER ---------- */
+    .header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
 
     .profile-img {
-      width: 120px; height: 120px;
+      width: 128px;
+      height: 128px;
       border-radius: 50%;
       border: 3px solid #38bdf8;
-      box-shadow: 0 0 18px rgba(56, 189, 248, 0.35);
+      box-shadow: 0 0 24px rgba(56, 189, 248, 0.45);
       object-fit: cover;
     }
 
     h1 {
       margin: 18px 0 4px;
-      font-size: 30px;
+      font-size: 32px;
       font-weight: 800;
       letter-spacing: -0.02em;
       color: #f1f5f9;
     }
 
     .tagline {
-      color: #93c5fd;
-      font-size: 15px;
+      color: #38bdf8;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
       font-weight: 500;
-      margin-bottom: 16px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
     }
 
-    .badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 20px; }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
 
     .badge {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
+      font-size: 11.5px;
       padding: 6px 12px;
       border-radius: 999px;
       border: 1px solid;
+      letter-spacing: 0.01em;
     }
 
     .badge-ok { color: #93c5fd; border-color: rgba(147,197,253,0.35); background: rgba(147,197,253,0.06); }
     .badge-warn { color: #fbbf24; border-color: rgba(251,191,36,0.35); background: rgba(251,191,36,0.06); }
     .badge-live { color: #4ade80; border-color: rgba(74,222,128,0.35); background: rgba(74,222,128,0.06); }
 
-    .summary { max-width: 600px; margin: 0 auto 20px; color: #aab4c4; line-height: 1.65; }
+    .aspiration {
+      max-width: 620px;
+      margin: 0 auto 20px;
+      color: #aab4c4;
+      line-height: 1.6;
+    }
 
-    .contact p { margin: 6px 0; color: #8b96a8; font-size: 14px; }
+    .contact p { margin: 6px 0; color: #8b96a8; font-size: 14.5px; }
+
     .contact .links { margin-top: 14px; }
 
     .contact a {
@@ -360,12 +331,17 @@ import { Component } from '@angular/core';
       text-decoration: none;
       font-weight: 500;
       font-size: 14px;
-      border: 1px solid rgba(56,189,248,0.35);
+      border: 1px solid rgba(56,189,248,0.4);
       border-radius: 8px;
       transition: all 0.2s ease;
+      background: transparent;
     }
 
-    .contact a:hover { background: rgba(56,189,248,0.08); transform: translateY(-1px); }
+    .contact a:hover {
+      background: rgba(56,189,248,0.1);
+      box-shadow: 0 0 14px rgba(56, 189, 248, 0.35);
+      transform: translateY(-1px);
+    }
 
     .contact a.cta {
       background: linear-gradient(135deg, #38bdf8, #0ea5e9);
@@ -374,14 +350,18 @@ import { Component } from '@angular/core';
       font-weight: 700;
     }
 
-    /* SECTIONS */
-    .section { margin-top: 46px; }
+    .contact a.cta:hover {
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+    }
+
+    /* ---------- SECTIONS ---------- */
+    .section { margin-top: 48px; }
 
     .eyebrow {
       display: block;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
-      letter-spacing: 0.1em;
+      font-size: 11.5px;
+      letter-spacing: 0.12em;
       color: #64748b;
       text-transform: uppercase;
       margin-bottom: 6px;
@@ -389,204 +369,214 @@ import { Component } from '@angular/core';
 
     h2 {
       color: #f1f5f9;
-      font-size: 21px;
+      font-size: 22px;
       font-weight: 700;
       border-left: 3px solid #38bdf8;
       padding-left: 12px;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     .card {
-      background: #0f1826;
+      background: #08101f;
       border: 1px solid #1e293b;
-      padding: 22px;
-      border-radius: 12px;
-      margin-bottom: 18px;
+      padding: 24px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 24px rgba(56, 189, 248, 0.06);
       line-height: 1.7;
     }
 
     .card p { color: #c3cbd8; margin-bottom: 12px; }
     .card p:last-child { margin-bottom: 0; }
 
-    /* TABS */
-    .tabs { display: flex; gap: 8px; margin-bottom: 4px; }
-
-    .tab {
-      font-family: 'Inter', sans-serif;
-      font-size: 13.5px;
-      font-weight: 600;
-      padding: 10px 18px;
-      border-radius: 8px 8px 0 0;
+    /* ---------- TERMINAL PROJECT CARDS ---------- */
+    .term-card {
+      background: #08101f;
       border: 1px solid #1e293b;
-      border-bottom: none;
-      background: #0a1220;
-      color: #7c8798;
-      cursor: pointer;
-      transition: all 0.15s ease;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 22px;
+      box-shadow: 0 0 24px rgba(56, 189, 248, 0.05);
+      transition: border-color 0.2s ease, transform 0.2s ease;
     }
 
-    .tab:hover { color: #cbd5e1; }
-
-    .tab.active {
-      background: #0f1826;
-      color: #38bdf8;
-      border-color: #1e293b;
+    .term-card:hover {
+      border-color: rgba(56,189,248,0.4);
+      transform: translateY(-2px);
     }
 
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      border-top-left-radius: 0;
+    .term-card.featured {
+      border-color: rgba(56,189,248,0.5);
+      box-shadow: 0 0 32px rgba(56, 189, 248, 0.12);
     }
 
-    .security-note {
-      grid-column: 1 / -1;
-      font-size: 13px;
-      color: #94a3b8;
-      font-style: italic;
+    .term-bar {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 16px;
+      background: #0c1526;
       border-bottom: 1px solid #1e293b;
-      padding-bottom: 14px;
-      margin-bottom: 4px !important;
     }
 
-    .skill-group h4 { color: #f1f5f9; font-size: 14.5px; font-weight: 700; margin: 0 0 6px; }
-    .skill-note { color: #8b96a8; font-size: 13.5px; margin-bottom: 8px !important; line-height: 1.5; }
+    .dot {
+      width: 9px; height: 9px;
+      border-radius: 50%;
+      background: #334155;
+    }
 
-    .tech-row { display: flex; flex-wrap: wrap; gap: 7px; margin: 6px 0 4px; }
+    .term-path {
+      margin-left: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #64748b;
+      flex: 1;
+    }
+
+    .status {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      letter-spacing: 0.06em;
+      padding: 3px 9px;
+      border-radius: 999px;
+    }
+
+    .status-live { color: #4ade80; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.3); }
+    .status-team { color: #93c5fd; background: rgba(147,197,253,0.08); border: 1px solid rgba(147,197,253,0.3); }
+
+    .term-body { padding: 22px 24px; }
+
+    .project-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .pill-featured {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      color: #041322;
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .term-body h3 {
+      color: #7dd3fc;
+      font-size: 17px;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+
+    .role {
+      color: #64748b;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .project-desc { color: #a9b3c4; margin-bottom: 12px; line-height: 1.6; }
+
+    .term-body ul { margin: 0 0 14px 20px; }
+    .term-body li { margin-bottom: 7px; color: #c3cbd8; line-height: 1.55; }
+
+    .tech-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 6px 0 14px;
+    }
 
     .tech {
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
       color: #93c5fd;
       background: rgba(56,189,248,0.08);
-      border: 1px solid rgba(56,189,248,0.2);
+      border: 1px solid rgba(56,189,248,0.22);
       padding: 4px 10px;
       border-radius: 6px;
     }
 
-    /* PROJECT CARDS */
-    .project-card {
-      background: #0f1826;
-      border: 1px solid #1e293b;
-      border-radius: 12px;
-      padding: 22px;
-      margin-bottom: 18px;
-      transition: border-color 0.2s ease;
-    }
-
-    .project-card.featured { border-color: rgba(56,189,248,0.4); }
-    .project-card:hover { border-color: rgba(56,189,248,0.35); }
-
-    .project-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
-
-    .tag {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
-      color: #93c5fd;
-      background: rgba(147,197,253,0.08);
-      border: 1px solid rgba(147,197,253,0.25);
-      padding: 4px 10px;
-      border-radius: 6px;
-    }
-
-    .tag-featured {
-      color: #041322;
-      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-      border: none;
-      font-weight: 600;
-    }
-
-    .status {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 10.5px;
-      padding: 3px 9px;
-      border-radius: 999px;
-    }
-
-    .status-live { color: #4ade80; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.3); }
-
-    .project-card h3 { color: #f1f5f9; font-size: 17px; font-weight: 700; margin: 0 0 8px; }
-    .project-desc { color: #a9b3c4; margin-bottom: 14px; line-height: 1.6; }
-
-    .details-btn {
-      font-family: 'Inter', sans-serif;
-      font-size: 13px;
-      font-weight: 600;
+    .links a {
       color: #38bdf8;
-      background: transparent;
-      border: 1px solid rgba(56,189,248,0.35);
-      padding: 7px 14px;
-      border-radius: 7px;
-      cursor: pointer;
-      transition: all 0.15s ease;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
     }
-
-    .details-btn:hover { background: rgba(56,189,248,0.08); }
-
-    .details { margin-top: 16px; padding-top: 16px; border-top: 1px solid #1e293b; }
-    .details ul { margin: 0 0 14px 20px; }
-    .details li { margin-bottom: 7px; color: #c3cbd8; line-height: 1.55; }
-
-    .links a { color: #38bdf8; font-weight: 600; font-size: 14px; text-decoration: none; }
     .links a:hover { text-decoration: underline; }
 
-    /* TIMELINE */
+    /* ---------- SKILLS ---------- */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .skill-group h4 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin: 0 0 10px;
+    }
+
+    /* ---------- TIMELINE ---------- */
     .timeline-item {
       position: relative;
-      padding: 4px 0 4px 22px;
+      padding: 4px 0 4px 24px;
       border-left: 2px solid #1e293b;
-      margin-bottom: 24px;
+      margin-bottom: 26px;
     }
 
     .timeline-item::before {
       content: '';
       position: absolute;
-      left: -6px; top: 6px;
-      width: 10px; height: 10px;
+      left: -6px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
       border-radius: 50%;
       background: #38bdf8;
+      box-shadow: 0 0 10px rgba(56,189,248,0.6);
     }
 
-    .timeline-item h3 { color: #f1f5f9; font-size: 15.5px; font-weight: 700; margin: 0 0 4px; }
-    .role { color: #64748b; font-weight: 400; font-size: 13.5px; }
+    .timeline-item h3 {
+      color: #f1f5f9;
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0 0 4px;
+    }
+
     .timeline-item .time {
       font-family: 'JetBrains Mono', monospace;
-      color: #64748b; font-size: 11.5px; margin-bottom: 10px;
+      color: #64748b;
+      font-size: 12px;
+      margin-bottom: 10px;
     }
+
     .timeline-item ul { margin-left: 20px; }
     .timeline-item li { margin-bottom: 7px; color: #c3cbd8; line-height: 1.55; }
 
-    /* EDUCATION */
-    .edu-row {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 10px 0; border-bottom: 1px solid #1e293b;
+    /* ---------- FOOTER ---------- */
+    .footer {
+      text-align: center;
+      margin-top: 64px;
+      color: #4b5568;
+      font-size: 13px;
+      font-family: 'JetBrains Mono', monospace;
     }
-    .edu-row:last-child { border-bottom: none; padding-bottom: 0; }
-    .edu-row h4 { color: #f1f5f9; font-size: 15px; font-weight: 700; margin: 0 0 2px; }
-    .edu-row .time { font-family: 'JetBrains Mono', monospace; color: #64748b; font-size: 12px; white-space: nowrap; }
 
-    /* FOOTER */
-    .footer { text-align: center; margin-top: 60px; color: #4b5568; font-size: 13px; font-family: 'JetBrains Mono', monospace; }
-
-    /* RESPONSIVE */
+    /* ---------- RESPONSIVE ---------- */
     @media (max-width: 640px) {
-      h1 { font-size: 25px; }
-      .card, .project-card { padding: 16px; }
+      h1 { font-size: 26px; }
+      .card, .term-body { padding: 18px; }
       .skills-grid { grid-template-columns: 1fr; }
-      .tabs { flex-wrap: wrap; }
+      .project-head { flex-direction: column; align-items: flex-start; }
     }
   `]
 })
-export class AppComponent {
-  activeTab: 'dev' | 'security' = 'dev';
-  expanded: { [key: string]: boolean } = {};
-
-  setTab(tab: 'dev' | 'security') {
-    this.activeTab = tab;
-  }
-
-  toggle(id: string) {
-    this.expanded[id] = !this.expanded[id];
-  }
-}
+export class AppComponent {}
